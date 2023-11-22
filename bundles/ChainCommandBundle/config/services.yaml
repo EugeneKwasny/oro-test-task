@@ -1,0 +1,8 @@
+# config/services.yaml
+services:
+    # this is the service's id
+    oro_test_task.chain_command_bundle.console_command_subscriber:
+        class: OroTestTask\ChainCommandBundle\EventSubscriber\ConsoleCommandSubscriber
+        # you CAN still use autowiring: we just want to show what it looks like without
+        autowire: false
+        tags: [kernel.event_listener]
