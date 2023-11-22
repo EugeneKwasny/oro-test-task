@@ -1,0 +1,10 @@
+{
+    "name": "oro-test-task/chain-command-bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "OroTestTask\\ChainCommandBundle\\": "src/"
+        }
+    },
+    "require": {}
+}
