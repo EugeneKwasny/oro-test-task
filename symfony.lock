@@ -1,4 +1,7 @@
 {
+    "oro-test-task/chain-command-bundle": {
+        "version": "dev-main"
+    },
     "symfony/console": {
         "version": "6.3",
         "recipe": {

@@ -4,8 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67c27f232e3a526f77baacf764aca94c",
+    "content-hash": "22964fc69e22935414e187d2b60652a1",
     "packages": [
+        {
+            "name": "oro-test-task/chain-command-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "bundles/ChainCommandBundle",
+                "reference": "1bbf40e53a6659985f04905fa0ca2b21d9d5f263"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "OroTestTask\\ChainCommandBundle\\": "src/"
+                }
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "psr/cache",
             "version": "3.0.0",
@@ -2767,9 +2785,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2.12",

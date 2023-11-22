@@ -3,12 +3,13 @@
     "type": "project",
     "license": "MIT",
     "description": "A minimal Symfony project recommended to create bare bones applications",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "prefer-stable": false,
     "require": {
         "php": ">=8.2.12",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "oro-test-task/chain-command-bundle": "dev-main",
         "runtime/frankenphp-symfony": "^0.1.1",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
@@ -68,5 +69,11 @@
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.51"
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "bundles/ChainCommandBundle"
+        }
+    ]
 }
